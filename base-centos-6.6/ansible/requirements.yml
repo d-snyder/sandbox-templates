@@ -1,0 +1,8 @@
+---
+# from github
+- src: https://github.com/d-snyder/ansible-iptables.git
+  version: master
+  path: roles
+- src: https://github.com/d-snyder/ansible-samba.git
+  version: master
+  path: roles
