@@ -6,3 +6,20 @@
 - src: https://github.com/d-snyder/ansible-samba.git
   version: master
   path: roles
+- src: https://github.com/d-snyder/ansible-oc-endeca-mdex.git
+  version: master
+  path: roles
+  name: oc-endeca-mdex
+- src: https://github.com/d-snyder/ansible-oc-endeca-platformservices.git
+  version: master
+  path: roles
+  name: oc-endeca-platformservices
+- src: https://github.com/d-snyder/ansible-oc-endeca-cas.git
+  version: master
+  path: roles
+  name: oc-endeca-cas
+- src: https://github.com/d-snyder/ansible-oc-endeca-toolsandframeworks.git
+  version: master
+  path: roles
+  name: oc-endeca-toolsandframeworks
+

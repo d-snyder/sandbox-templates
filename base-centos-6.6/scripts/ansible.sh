@@ -6,8 +6,13 @@ if ! rpm -qa | grep -qw ansible; then
 fi
 
 mkdir -m 777 /tmp/packer-provisioner-ansible-local
+mkdir -m 777 /tmp/packer-provisioner-ansible-local/roles
 cd /tmp/packer-provisioner-ansible-local
 
-sudo ansible-galaxy install -r /tmp/requirements.yml
+ansible-galaxy install -r /tmp/requirements.yml
+echo 'ls -l /tmp'
 ls -l /tmp
+echo 'ls -l /tmp/packer-provisioner-ansible-local'
 ls -l /tmp/packer-provisioner-ansible-local
+echo 'ls -l /tmp/packer-provisioner-ansible-local/roles'
+ls -l /tmp/packer-provisioner-ansible-local/roles

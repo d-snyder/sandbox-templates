@@ -2,5 +2,11 @@
 - hosts: all
   sudo: yes
   roles:
-    - { role: "ansible-iptables" }
-    - { role: "ansible-samba" }
+    - { role: "oc-base" }
+#    - { role: "ansible-iptables" }
+#    - { role: "ansible-samba" }
+    - { role: "oc-endeca-mdex", sudo_user: "oracle" }
+    - { role: "oc-endeca-platformservices", sudo_user: "oracle" }
+    - { role: "oc-endeca-cas", sudo_user: "oracle" }
+    - { role: "oc-endeca-toolsandframeworks", sudo_user: "oracle" }
+
